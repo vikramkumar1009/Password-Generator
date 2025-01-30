@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://media.istockphoto.com/id/1456260203/photo/cyber-security-and-security-password-login-online-concept-hands-typing-and-entering-username.jpg?s=2048x2048&w=is&k=20&c=eLA6uddkTCBpgH-QKk7SpOA0c57Obvw4lmv5vOCqO4Y=') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for depth */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff; /* White text for better contrast */
+  }
+  
+  .password-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  #password {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #fff; /* White text for better contrast */
+    transition: border-color 0.3s ease;
+  }
+  
+  #password:focus {
+    border-color: #6a11cb;
+  }
+  
+  #copy-btn {
+    width: 25%;
+    padding: 12px;
+    background-color: rgba(106, 17, 203, 0.8); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #copy-btn:hover {
+    background-color: rgba(37, 117, 252, 0.8); /* Semi-transparent background */
+  }
+  
+  .copied-notification {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6a11cb;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .copied-notification.show {
+    opacity: 1;
+  }
+  
+  .password-strength {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .strength-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff; /* White text for better contrast */
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0;
+    background-color: #ff4d4d;
+    border-radius: 5px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .options label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff; /* White text for better contrast */
+  }
+  
+  .options input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 5px;
+  }
+  
+  #length-value {
+    font-weight: bold;
+    color: #6a11cb;
+  }
+  
+  #generate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(37, 117, 252, 0.8); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #generate-btn:hover {
+    background-color: rgba(106, 17, 203, 0.8); /* Semi-transparent background */
+  }
